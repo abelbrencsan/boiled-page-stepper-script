@@ -1,5 +1,5 @@
 /**
- * Stepper - v1.0.0
+ * Stepper - v1.0.1
  * Copyright 2020 Abel Brencsan
  * Released under the MIT License
  */
@@ -136,6 +136,12 @@ Stepper.prototype = function () {
 		* @param value mixed
 		*/
 		setValue: function(value) {
+			if (value < this.min) {
+				value = this.min;
+			}
+			else if(value > this.max) {
+				value = this.max;
+			}
 			this.input.value = value;
 			if (this.setValueCallback) this.setValueCallback.call(this, value);
 		},
