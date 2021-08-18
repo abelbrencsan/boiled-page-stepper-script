@@ -64,10 +64,6 @@ Parameter | Type | Required | Description
 
 `destroy()` - Destroy stepper. It removes events relevant to stepper.
 
-### Check stepper is initialized or not
-
-`getIsInitialized()` - Check stepper is initialized or not. It returns `true` when it is already initialized, `false` if not.
-
 ## Examples
 
 ### Example 1

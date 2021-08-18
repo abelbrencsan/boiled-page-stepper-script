@@ -1,6 +1,6 @@
 /**
- * Stepper - v1.0.1
- * Copyright 2020 Abel Brencsan
+ * Stepper - v1.1.0
+ * Copyright 2021 Abel Brencsan
  * Released under the MIT License
  */
 
@@ -189,13 +189,6 @@ Stepper.prototype = function () {
 			}
 			this.isInitialized = false;
 			if (this.destroyCallback) this.destroyCallback.call(this);
-		},
-
-		/**
-		 * Get value of "isInitialized" to be abe to check stepper is initialized. (public)
-		 */
-		getIsInitialized: function() {
-			return this.isInitialized;
 		}
 	};
 
@@ -224,8 +217,7 @@ Stepper.prototype = function () {
 		init: stepper.init,
 		stepByValue: stepper.stepByValue,
 		setValue: stepper.setValue,
-		destroy: stepper.destroy,
-		getIsInitialized: stepper.getIsInitialized
+		destroy: stepper.destroy
 	};
 
 }();
